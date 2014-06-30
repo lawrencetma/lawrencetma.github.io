@@ -50,12 +50,9 @@ a:active {
 }
 
 #post {
-	text-align: center;
 	height: 90%;
 	width: 90%;
-	font: 12px Helvetica;
-	border-style: solid;
-	border-width: thin;
+	font: 15px Helvetica;
 }
 
 #sidebar {
