@@ -1,0 +1,15 @@
+body {
+	background-color: lightgrey;
+	font-family: Verdana, serif;
+}
+.bluebold {
+	font-size: medium;
+	color: darkblue;
+	font-weight: bold;
+}
+
+#crazytext {
+	font-size: large;
+	color: orange;
+	font-weight: bold;
+}
