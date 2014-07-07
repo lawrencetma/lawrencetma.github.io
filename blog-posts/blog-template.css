@@ -1,13 +1,17 @@
-title {
-	font-family: Verdana;
-	font-size: 14px;
-}
-
 body {
 	margin:0;
 	padding:0;
 	height:100%;
-	background-color: #FFFF99;
+}
+
+a {
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+img {
+	margin: 20px;
 }
 
 a:link {
@@ -33,10 +37,11 @@ a:active {
 
 #header {
 	padding:10px;
+	padding-left: 30px;
 	font-size: 40px;
-	font-family: Verdana;
+	font-family: Arial;
 	font-weight: bold;
-	color: #FF9900;
+	background: #CCFF66;
 }
 
 #content {
@@ -45,11 +50,10 @@ a:active {
 	margin: 0 1.5%;
 	width: 63%;
 	padding-bottom: 80px;
-	border-style: solid;
-	border-width: thin;
 }
 
 #post {
+	padding: 20px;
 	height: 90%;
 	width: 90%;
 	font: 15px Helvetica;
@@ -64,6 +68,8 @@ a:active {
 	padding-bottom: 80px;
 	border-style: solid;
 	border-width: thin;
+	border-radius: 20px;
+	background: #C8C8C8;
 }
 
 #footer {
@@ -79,6 +85,7 @@ a:active {
 	text-align: center;
 }
 
-#post-heading {
+#post_head {
 	text-align: center;
 }
+
