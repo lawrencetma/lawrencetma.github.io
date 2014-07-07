@@ -1,0 +1,54 @@
+header {
+	font-family: Courier;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 5px;
+	padding-left: 40px;
+	text-align: left;
+	background: #4682B4;
+}
+
+#Blog_Titles {
+	font-family: Arial;
+	font-size: 20pt;
+	text-align: center;
+	color: auto;
+}
+
+nav {
+	padding-left: 20px;
+	padding: 5px;
+	background: #505050;
+}
+
+nav > a {
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+
+#image {
+	position: absolute;
+	float: left;
+	padding: 10px;
+	margin-right: 32%;
+}
+
+#main {
+	position: absolute;
+	width: 60%;
+	margin-left: 25%;
+	padding-right: 20px;
+	text-align: left;
+}
+
+#posts {
+	font-family: Arial;
+	text-align: left;
+}
+
+a:hover {
+	color: #909090;
+}
