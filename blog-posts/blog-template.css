@@ -14,20 +14,8 @@ img {
 	margin: 20px;
 }
 
-a:link {
-	color: #000099;
-}
-
-a:visited {
-	color: #006699;
-}
-
 a:hover {
-	color: #00CCCC;
-}
-
-a:active {
-	color: #0000FF;
+	color: #909090;
 }
 
 #wrapper {
@@ -42,6 +30,20 @@ a:active {
 	font-family: Arial;
 	font-weight: bold;
 	background: #CCFF66;
+}
+
+nav {
+	padding-left: 20px;
+	padding: 5px;
+	background: #505050;
+}
+
+nav > a {
+	font-family: Arial;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
 }
 
 #content {
