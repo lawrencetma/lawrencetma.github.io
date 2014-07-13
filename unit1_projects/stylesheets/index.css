@@ -1,3 +1,8 @@
+html {
+	background: url(http://77wallpaper.com/wp-content/uploads/2014/07/Background-Pattern-94.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
 header {
 	font-family: Courier;
 	font-size: 1.5em;
@@ -5,7 +10,7 @@ header {
 	padding: 5px;
 	padding-left: 40px;
 	text-align: left;
-	background: #4682B4;
+	background: none;
 }
 
 #Blog_Titles {
@@ -16,21 +21,58 @@ header {
 }
 
 nav {
-	padding-left: 20px;
-	padding: 5px;
+	padding: 0;
 	background: #505050;
 }
 
-nav > a {
-	font-family: Arial;
-	font-weight: bold;
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li:hover {
+	background-color: #333;
+}
+
+nav ul li a,visited {
+	color: #ccc;
+	display: block;
+	padding: 15px;
 	text-decoration: none;
+	font-family: Arial;
+}
+
+nav ul li a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	background: #333;
+}
+
+nav ul ul li {
+	display: block;
+}
+
+nav ul ul li a:hover {
 	color: white;
-	padding: 10px;
 }
 
 #image {
-	position: absolute;
+	position: relative;
 	float: left;
 	padding: 10px;
 	margin-right: 32%;
@@ -47,8 +89,4 @@ nav > a {
 #posts {
 	font-family: Arial;
 	text-align: left;
-}
-
-a:hover {
-	color: #909090;
 }
