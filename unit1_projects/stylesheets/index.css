@@ -79,9 +79,8 @@ nav ul ul li a:hover {
 }
 
 #main {
-	position: absolute;
 	width: 60%;
-	margin-left: 25%;
+	margin-left: 15%;
 	padding-right: 20px;
 	text-align: left;
 }
