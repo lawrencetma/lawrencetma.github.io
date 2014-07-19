@@ -27,7 +27,7 @@ a:hover {
 	padding:10px;
 	padding-left: 30px;
 	font-size: 40px;
-	font-family: Arial;
+	font-family: 'Cuprum', sans-serif;
 	font-weight: bold;
 	background: #CCFF66;
 }
@@ -89,5 +89,6 @@ nav > a {
 
 #post_head {
 	text-align: center;
+	font-family: 'Cuprum', sans-serif;
 }
 
