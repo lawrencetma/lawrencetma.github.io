@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 4 Tech Blog</title>
+		<link rel="stylesheet" type="text/css" href="blog-template.css">
+	</head>
+	<body>
+		<div id="wrapper">
+		
+			<header id="header">Week 4 Technical Blog</header>
+			<nav>
+				<a href="http://lawrencetma.github.io/">Home</a>|
+				<a href="mailto:lawrencetma@gmail.com?Subject=Hi%20there" target="_top">E-mail</a>
+			</nav>
+			<div id="content">
+				<div id="post">
+					<h2 id="post_head">Going for the Cycle</h2>
+						<p>
+							<img src="http://www.goodjobbrain.com/storage/post-images/27.jpeg?__SQUARESPACE_CACHEVERSION=1346689956544" align="left" height="300" width="300">
+							For today's blog I decided to look at the Enumberable 'cycle' if for no other reason than the fact that I just had never heard of it.  I'm glad I chose it because it's a really interesting method and has the potential to be used in a variety of problems I might face when coding in Ruby.<br><br>
+							Basically cycle can be used on an array and can pass an optional block of code that does something to each element passed to the block.  When the last item has been passed to that block, cycle starts over at the beginning of the array and goes through again.  This is basically an infinite loop method unless you include a break with some type of condition built into the block.<br><br>
+							When researching this subject I came across another blog post by Joey deVilla on his tech blog <a href="http://www.globalnerdy.com/2008/07/06/enumerating-enumerable-enumerablecycle/">Global Nerdy</a> which explained very well how this method works.  In the blog he uses the example of using cycle on days of the week, and that using Enumerable's "next" method can give us the next day of the week.<br><br>
+							The best example to show how cycle works is when you're given two lists that you want to match, but the problem is that the lists do not have an equal number of elements.  Lets say we have 3 security guards and we want them to work 7 days a week in a cycle.  The cycle method helps us with that.
+						</p>
+						<blockquote><b>
+							guards = ["Curly", "Larry", "Moe"]<br>
+							days_of_the_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]<br><br>
+							security = guards.cycle<br>
+							days = days_of_the_week.cycle</b></blockquote>
+						<p>
+							Once we've created our variables that cycle through our guard names and the days of the week we can use a times method to assign the guards to the days of the week in the first week.  First of all we will need to call the method 'rewind' to make sure we are starting with the first guard
+						</p>
+						<blockquote><b>
+							security.rewind<br><br>
+							7.times do
+							&nbsp;&nbsp;guard = security.next<br>
+							&nbsp;&nbsp;day = days.next<br>
+							&nbsp;&nbsp;puts "On #{day}, Guard #{guard} will be on duty"<br>
+							end
+							<br><br>
+							=> On Monday, Guard Curly will be on duty<br>
+							On Tuesday, Guard Larry will be on duty<br>
+							On Wednesday, Guard Moe will be on duty<br>
+							On Thursday, Guard Curly will be on duty<br>
+							On Friday, Guard Larry will be on duty<br>
+							On Saturday, Guard Moe will be on duty<br>
+							On Sunday, Guard Curly will be on duty
+						</blockquote></b>
+						<p>
+							As you can see, each guard has now been assigned to a day of the week and it can be done continuously.  Remember it is very important that you either include the cycle method as part of a loop with a built in break such as the 'times' method or to write in a break that occurs when a certain condition is fulfilled.<br><br>
+							I'd love to think of new and interesting ways to implement the cycle method, but for now it's already a very interesting method to use in your box of Ruby tools. Enjoy!
+						</p>
+				</div>		
+			</div>
+			<div id="sidebar">
+				<h2>Links</h2>
+				<a href="http://www.globalnerdy.com/2008/07/06/enumerating-enumerable-enumerablecycle/">Global Nerdy</a><br><br>
+				<a href="http://ruby-doc.org/core-2.1.2/Enumerable.html">Enumerable</a>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+</html>
