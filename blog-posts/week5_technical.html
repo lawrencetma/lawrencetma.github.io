@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 5 Technical Blog</title>
+		<link rel="stylesheet" type="text/css" href="blog-template.css">
+		<link href='http://fonts.googleapis.com/css?family=Cuprum:700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="wrapper">
+		
+			<header id="header">Week 5 Technical Blog</header>
+			<nav>
+				<a href="http://lawrencetma.github.io/">Home</a>|
+				<a href="mailto:lawrencetma@gmail.com?Subject=Hi%20there" target="_top">E-mail</a>
+			</nav>
+			<div id="content">
+				<div id="post">
+					<h2 id="post_head">Using Instance Variables in Classes</h2>
+						<img src="http://support.radioshack.com/support_tutorials/communications/Images/pro2067e_init.gif" align="right">
+						<p>
+							You've heard this before, but just to hammer it in again, Classes are very important.  When programming in Ruby, classes are a major framework of your programming and allow us to program in a truly object oriented way.<br><br>
+							So what does that mean?  If we want to program certain methods for certain types of objects but not necessarily want them to have the same methods or attributes we create classes.  For example, if we wanted to create a class for dogs, we want particular methds for the dog class that wouldn't apply to other objects.  An object in the dog class for example might have a method for barking, or a method for fetching a bone.  We could also allow each dog to have it's own attributes upon the creation of that instance.<br><br>
+							That brings us to instances of a class, what is that?  An instance of a class is an object that falls under that class.  In our dog example, a dog instance could look like this:
+							<blockquote><i>
+								golden_retriever = Dog.new
+							</blockquote></i>
+							Our instance, golden_retriever, will now have access to all the methods that reside within the Dog class.  But what if we want to provide arguments to this instance?  This is where the initialize method comes in.<br><br>
+							When we initialize a class like above you can program certain things that will occur when the class is initialized by defining a method within the class as "initialize".  The initialize method can accept arguments and then take those arguments to create instance variables like so:
+							<blockquote><i>
+								def initialize(name, age, color)<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;@name = name<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;@age = age<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;@color = color<br>
+								end
+							</blockquote></i>
+							Instance variables are very important in classes because they can be accessed throughout the class by different methods.  By setting each instance variable like @name to an argument being passed upon initialization we are able to access the data from this instance in all of our dog methods.  For example if we have a method in our Dog class that just prints the name of the instance we can use an instance variable to run it.
+							<blockquote><i>
+								def name<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;print @name<br>
+								end
+							</blockquote></i>
+							Hope this helped your understanding of instance variables, now go include some in your initialize methods!
+						</p>
+				</div>		
+			</div>
+			<div id="sidebar">
+				<h2>Links</h2>
+				<a href="http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/45-more-classes/lessons/110-instance-variables">Ruby Monk - Instance Variables and Accessors</a><br><br>
+				<a href="http://www.rubyist.net/~slagell/ruby/instancevars.html">Rubyist - Instance Variables</a>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+</html>
