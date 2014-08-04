@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 6 Technical Blog</title>
+		<link rel="stylesheet" type="text/css" href="blog-template.css">
+		<link href='http://fonts.googleapis.com/css?family=Cuprum:700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="wrapper">
+		
+			<header id="header">Week 6 Technical Blog</header>
+			<nav>
+				<a href="http://lawrencetma.github.io/">Home</a>|
+				<a href="mailto:lawrencetma@gmail.com?Subject=Hi%20there" target="_top">E-mail</a>
+			</nav>
+			<div id="content">
+				<div id="post">
+					<h2 id="post_head">Blocks, Procs and Lambdas Oh My!</h2>
+						<img src="http://cdn.static-economist.com/sites/default/files/images/2013/07/blogs/economist-explains/20130713_blp509.jpg" height="200" width="350" align="right">
+						<p>
+							On the outset, Blocks, Procs and Lambdas look very similar and do nearly identical things.  But there are nuanced differences that can help you in different situations while coding. Lets start off by looking at Blocks
+						</p>
+						<h3 id="post_head">Blocks</h3>
+							<p>
+								We've been using blocks for awhile but let's recap.  A block is a snipet of code that you can run which doesn't have a name.  A block will look something like this:
+								<blockquote><i>
+									array = [1, 2, 3, 4]<br><br>
+									array.collect! do |n|<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;n * 2<br>
+									end<br><br>
+									puts array.inspect<br><br>
+									<b># => [2, 4, 6, 8]</b>
+								</blockquote></i>
+							</p>
+							<p>
+								When we call the "collect!" method we then want it to run this block of code on the array.  In this case, multiplying each member of the array by 2.  A block is either begun by a "do" and stops with an "end" or they can be enclosed within curly brackets like so:
+								<blockquote><i>
+									array.map { |n| n + 2 }
+								</blockquote></i>
+							</p>
+						<h3 id="post_head">Procs</h3>
+							<p>
+								So we know what a block looks like, but what about a Proc?  Proc, short for procedure is very similar to a block, lets see how we use it:
+								<blockquote><i>
+									class Array<br>
+  									&nbsp;&nbsp;&nbsp;&nbsp;def iterate!(code)<br>
+    								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.each_with_index do |n, i|<br>
+      								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self[i] = code.call(n)<br>
+    								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end<br>
+  									&nbsp;&nbsp;&nbsp;&nbsp;end<br>
+									end<br><br>
+									array = [1, 2, 3, 4]<br><br>
+									double = Proc.new do |n| n * 2 end<br><br>
+									array.iterate!(double)<br><br>
+									<b># => [2, 4, 6, 8]</b>
+								</blockquote></i>
+							</p>
+							<p>
+								looking at the block example above the block and the Proc do similar things but what's different?  The Proc in this case is an instance of the Proc class.  In fact, blocks are Procs too!  But then why do we use blocks over Procs or vice versa?  Procs are useful because we can store them and call them multiple times.  Above we stored our Proc as "double" and we can now pass it into our new method iterate!
+							</p>
+							<p>
+								The basic rule of thumb is that you use blocks both to simplify your code and stylistically to make your code more object oriented.  However if you need to call that block multiple times or require multiple callbacks of that block, you should use a Proc instead.
+						<h3 id="post_head">Lambdas</h3>
+							<p>
+								I know what you're thinking... ANOTHER ONE?!  Yes a lambda can do the same things as a block and a Proc do, but with some minor differences.  First of all the major difference that a lambda has, is that it is actually a method.<br><br>
+								What this means is that a lambda will actually check for whether you have passed the correct number of arguments and will raise an ArgumentError if you have the wrong number of arguments.<br><br>
+								The second difference is that lambdas have diminutive returns which basically means if you return a value from within a block or Proc, the method will stop at that return value and will not continue on.  A lambda acts like a method and does not instantly return the value, rather it saves that value and moves on.  Here is an example:
+								<blockquote><i>
+									def proc_return<br>
+  									&nbsp;&nbsp;&nbsp;&nbsp;Proc.new { return "Proc.new"}.call<br>
+  									&nbsp;&nbsp;&nbsp;&nbsp;return "proc_return method finished"<br>
+									end<br><br>
+									def lambda_return<br>
+  									&nbsp;&nbsp;&nbsp;&nbsp;lambda { return "lambda" }.call<br>
+ 									&nbsp;&nbsp;&nbsp;&nbsp;return "lambda_return method finished"<br>
+									end<br><br>
+									puts proc_return<br>
+									puts lambda_return<br><br>
+									<b># => Proc.new</b><br>
+									<b># => lambda_return method finished</b>
+								</blockquote></i>
+							</p>
+							<p>
+								In the first example we call return on the instance of the Proc class and it stops processing the method and returns the string "Proc.new".  However when we use lambda the method keeps going and hits the next return and outputs the string "lambda_return method finished".  The simplest way to explain this is that lambdas are anonymous methods and act exactly the way a method does.  
+							</p>
+							<p>
+								Basically if you want to pass a block that checks for arguments and that will act like a method you should use a lambda, and if you want to keep it as running a snipet of code you should use a block or Proc.
+							</p>
+							<p>
+								Hopefully this has cleared up some of the confusion over whether to use blocks, Procs and lambdas, but play around with them and experiment and I'm sure you'll get the hang of it.
+							</p>
+
+				</div>		
+			</div>
+			<div id="sidebar">
+				<h2>Links</h2>
+					<a href="http://www.reactive.io/tips/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/">Understanding Ruby Blocks, Procs and Lambdas</a><br><br>
+					<a href="http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas">Ruby Monk - Blocks, Procs and Lambdas</a><br><br>
+					<a href="http://www.codecademy.com/courses/ruby-beginner-en-L3ZCI/0/1">Codecademy - Blocks, Procs, Lambdas</a>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+</html>
