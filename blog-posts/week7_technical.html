@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 7 Technical Blog</title>
+		<link rel="stylesheet" type="text/css" href="blog-template.css">
+		<link href='http://fonts.googleapis.com/css?family=Cuprum:700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="wrapper">
+		
+			<header id="header">Week 7 Technical Blog</header>
+			<nav>
+				<a href="http://lawrencetma.github.io/">Home</a>|
+				<a href="mailto:lawrencetma@gmail.com?Subject=Hi%20there" target="_top">E-mail</a>
+			</nav>
+			<div id="content">
+				<div id="post">
+					<h2 id="post_head">We're Uunder Attack!: SQL Injection attacks</h2>
+						<img src="http://www.tugberkugurlu.com/Content/Images/UploadedByAuthors/wlw/SQL-Injection-vs.-Lethal-Injection_D85/sql-injection.jpg" align="right">
+						<p>
+							With the widespread use of SQL to create and update databases for websites, there were bound to be ways to attack them.  SQL injections are how databases are attacked and they can be very dangerous and costly for companies who conduct business online.<br><br>
+							So how does SQL injection work?  If you can imagine that your code runs queries for the different data fields that are entered into your website, an SQL injection finds weaknesses in your code and exploits it using malicious data inputs that can harm your database.<br><br>
+							Some SQL injection can occur when the programmer has not been thurough in making sure that certain data fields are checked to make sure they are a certain type of data such as integers.  For example, if a programmer does not check whether a user_id must be an integer the following could be entered as the id:
+							<blockquote><i>
+								1;DROP TABLE users
+							</blockquote></i>
+							This could be quite problematic as the SQL query will then end up dropping the entire users table like so:
+							<blockquote><i>
+								SELECT = FROM userinfo WHERE id=1;DROP TABLE users;
+							</blockquote></i>
+							Most SQL injection attacks are a result of programmers who have not correctly written their code to avoid such attacks.
+						</p>
+						<p>
+							Most of the major ways to avoid SQL injection attacks is to enforce stricter type restrictions on data entries, filtering escape characters such as single quotation marks that can be susceptible to SQL injection attacks.
+						</p>
+						<p>
+							Because SQL injection attacks are so prevalent and can be used anywhere and almost on every website it is very important that when we create SQL tables for websites that we are following proper coding techniques such as filtering escape characters, checking for data types and for patterns or permissions that might be a weakness in your code.<br><br>
+							Make sure you are making the proper precautions when coding your databases in SQL so as to not allow for an easy target of SQL injection attacks.  Good Luck and have fun!
+						</p>
+				</div>		
+			</div>
+			<div id="sidebar">
+				<h2>Links</h2>
+				<a href="http://en.wikipedia.org/wiki/SQL_injection">SQL Injection - Wikipedia</a>
+			</div>
+			<div id="footer">
+			</div>
+		</div>
+	</body>
+</html>
