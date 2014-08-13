@@ -1,27 +1,19 @@
 html {
-	background: url(http://dinisfashion.com.my/wp-content/uploads/2013/04/light-grey-background.png) no-repeat center center fixed;
-	background-size: cover;
+	background: url(http://www.enecompower.com/wp-content/uploads/2013/12/architectural.jpg) no-repeat fixed;
+	background-size: fit;
 }
 
 header {
 	font-family: Courier;
 	font-size: 1.5em;
 	font-weight: bold;
-	padding: 5px;
-	padding-left: 40px;
+	padding: 10px;
 	text-align: left;
 	background: none;
 }
 
-#Blog_Titles {
-	font-family: Arial;
-	font-size: 20pt;
-	text-align: center;
-	color: auto;
-}
-
 nav {
-	padding: 0;
+	width: 100%;
 	background: #505050;
 }
 
@@ -80,9 +72,16 @@ nav ul ul li a:hover {
 
 #main {
 	width: 60%;
-	margin-left: 15%;
+	margin-left: 30%;
 	padding-right: 20px;
 	text-align: left;
+}
+
+#heading {
+	font-family: Courier;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
 }
 
 #posts {
