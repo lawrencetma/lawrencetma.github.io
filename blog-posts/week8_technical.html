@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Week 8 Technical Blog</title>
+		<link rel="stylesheet" type="text/css" href="blog-template.css">
+		<link href='http://fonts.googleapis.com/css?family=Cuprum:700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="wrapper">
+		
+			<header id="header">Week 8 Technical Blog</header>
+			<nav>
+				<a href="http://lawrencetma.github.io/">Home</a>|
+				<a href="mailto:lawrencetma@gmail.com?Subject=Hi%20there" target="_top">E-mail</a>
+			</nav>
+			<div id="content">
+				<div id="post">
+					<h1 id="post_head">How Does the Internet Work?</h1>
+						<img src="http://s.hswstatic.com/gif/internet-diagram.gif" align="left">
+						<p>
+							I type in www.google.com and the most popular search engine pops onto my screen.  But how did this magic occour?
+							<br><br>
+							The first thing to remember is that all computers similar to a house, has an address.  In the computer world, that address is called an IP Address.  Ok you probably already knew that, but did you know that the website you are visiting also has an IP address?<br><br>
+							For an experiment conduct a reverse IP Domain Check <a href="http://www.yougetsignal.com/tools/web-sites-on-web-server/">here</a><br><br>
+							Once you get that IP address, copy it and paste it into your navigation bar and see the same page pop up.  Amazing!<br><br>
+							But we don't type in IP addresses in order to get to webpages, how does entering in a web address translate to an IP address?<br><br>
+							First, your modem is what connects your computer to the internet.  A modem is hooked up between your computer and the internet through cables.  The modem is there to translate the signal coming in from those cables so your computer can put them up on your screen.<br><br>
+							Your computer through your modem will then send a message to a DNS server or Domain Name Server.<br><br>
+							Domnain Name Servers can be thought of as a re-routing service.  The DNS servers have lists and lists of different websites and what they have is the domain name of the website such as www.google.com and the IP address of that website.  Therefore when you type in www.google.com, your computer sends a packet of information to the DNS server in your area and asks it to forward to the correct IP address of that domain name.<br><br>
+							That packet of information contains your own IP address so that the web server knows where to send the information back.The DNS server looks up www.google.com, sees the corresponding IP address and sends your request to google's servers.<br><br>
+							Once your request is sent to the server, that server then responds with the corresponding web page which is then sent directly back to you as a packet of information that will allow your computer to display the entire web page.
+							<br><br>
+							And viola!  We have internet!  This entire operation probably took you a matter of seconds if not less, but it's fascinating how it occurs.  There are some other complexities but for the most part, this is how you are connected to the internet.  Now go test it out!
+						</p>
+				</div>		
+			</div>
+			<div id="sidebar">
+				<h2>Links</h2>
+					<a href="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm">How Does the Internet Work</a>
+				<h2>Connect<h2>
+				<a href="https://www.facebook.com/LawrenceTMa"><span id="icons">f</span>facebook</a><br>
+				<a href="https://twitter.com/leftfieldlaws"><span id="icons">t</span>twitter</a><br>
+				<a href="https://plus.google.com/u/0/106376259284403448263/posts"><span id="icons">g+</span>google+</a>
+			</div>
+			<div id="footer">
+				<p>
+					This template created by Lawrence Ma
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
