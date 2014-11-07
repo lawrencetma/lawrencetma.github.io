@@ -1,10 +1,11 @@
-html {
+body {
 	background: url(http://www.enecompower.com/wp-content/uploads/2013/12/architectural.jpg) no-repeat fixed;
 	background-size: fit;
+	background-position: bottom left;
 }
 
 header {
-	font-family: Courier;
+	font-family: 'Syncopate', sans-serif;
 	font-size: 1.5em;
 	font-weight: bold;
 	padding: 10px;
@@ -13,7 +14,9 @@ header {
 }
 
 nav {
-	width: 100%;
+	width: 105%;
+	margin-left: -8px;
+	padding-left: 10px;
 	background: #505050;
 }
 
@@ -37,7 +40,7 @@ nav ul li a,visited {
 	display: block;
 	padding: 15px;
 	text-decoration: none;
-	font-family: Arial;
+	font-family: 'Pontano Sans', sans-serif;
 }
 
 nav ul li a:hover {
@@ -71,14 +74,27 @@ nav ul ul li a:hover {
 }
 
 #main {
-	width: 60%;
-	margin-left: 30%;
-	padding-right: 20px;
+	max-width: 900px;
+	float: right;
+	margin-right: 10%;
 	text-align: left;
+	background-color: white;
+	display: inline-block;
+}
+
+.picture {
+	float: left;
+	border-radius: 2px;
+	box-shadow: 5px 5px 5px #4d4d4d;
+	margin: 25px;
+}
+
+.intro {
+	float: right;
 }
 
 #heading {
-	font-family: Courier;
+	font-family: 'Pontano Sans', sans-serif;
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
