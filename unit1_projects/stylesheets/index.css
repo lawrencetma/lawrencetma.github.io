@@ -2,6 +2,7 @@ body {
 	background: url(http://www.enecompower.com/wp-content/uploads/2013/12/architectural.jpg) no-repeat fixed;
 	background-size: fit;
 	background-position: bottom left;
+	font-family: 'Pontano Sans', sans-serif;
 }
 
 header {
@@ -98,9 +99,4 @@ nav ul ul li a:hover {
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
-}
-
-#posts {
-	font-family: Arial;
-	text-align: left;
 }
