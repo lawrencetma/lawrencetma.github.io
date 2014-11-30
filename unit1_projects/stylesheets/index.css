@@ -77,10 +77,21 @@ nav ul ul li a:hover {
 #main {
 	max-width: 900px;
 	float: right;
-	margin-right: 10%;
+	margin-right: 15%;
 	text-align: left;
-	background-color: white;
+	background-color: rgba(255,255,255,0.3);
+
 	display: inline-block;
+}
+
+.welcome-photo {
+	float: left;
+}
+
+.content {
+	width: 650px;
+	float: left;
+	margin-right: 35%;
 }
 
 .picture {
@@ -92,6 +103,7 @@ nav ul ul li a:hover {
 
 .intro {
 	float: right;
+	display: inline-block;
 }
 
 #heading {
@@ -99,4 +111,12 @@ nav ul ul li a:hover {
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
+}
+
+.social_links {
+	opacity: 0.85;
+}
+
+.social_links:hover {
+	opacity: 1;
 }
