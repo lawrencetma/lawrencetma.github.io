@@ -1,65 +1,265 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="unit1_projects/stylesheets/index.css">
-  <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="unit1_projects/images/lawrence.ico" type="image/x-icon" />
-	<title>Lawrence Ma</title>
-	<header>
-		<h1>Lawrence Ma</h1>
-	</header>
-</head>
-<body>
-	<nav id="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li><li>
-			<a href="#">Technical Blogs</a><ul><li>
-				<a href="blog-posts/week1_technical.html">Week 1 Technical</a></li><li>
-        		<a href="blog-posts/week2_technical.html">Week 2 Technical</a></li><li>
-        		<a href="blog-posts/week3_technical.html">Week 3 Technical</a></li><li>
-        		<a href="blog-posts/week4_technical.html">Week 4 Technical</a></li><li>
-        		<a href="blog-posts/week5_technical.html">Week 5 Technical</a></li><li>
-        		<a href="blog-posts/week6_technical.html">Week 6 Technical</a></li><li>
-        		<a href="blog-posts/week7_technical.html">Week 7 Technical</a></li><li>
-        		<a href="blog-posts/week8_technical.html">Week 8 Technical</a></li>
-        	</ul><li>
-        	<a href="#">Cultural Blogs</a><ul><li>
-        		<a href="blog-posts/week1_cultural.html">Week 1 Cultural</a></li><li>
-        		<a href="blog-posts/week3_cultural.html">Week 3 Cultural</a></li><li>
-        		<a href="blog-posts/week4_cultural.html">Week 4 Cultural</a></li><li>
-        		<a href="blog-posts/week5_cultural.html">Week 5 Cultural</a></li><li>
-        		<a href="blog-posts/week6_cultural.html">Week 6 Cultural</a></li><li>
-        		<a href="blog-posts/week7_cultural.html">Week 7 Cultural</a></li><li>
-        		<a href="blog-posts/week8_cultural.html">Week 8 Cultural</a></li><li>
-        		<a href="blog-posts/week9_cultural.html">Week 9 Cultural</a></li>
-        	</ul><li>
-          <a href="projects.html">Projects</a></li><li>
-          <a href="mailto:lawrencetma@gmail.com?Subject=Hello%20Lawrence" target="_top">E-mail</a></li>
-        </ul>
-	</nav>
-	<section id="main">
-      <div class="welcome-photo">
-        <img src="unit1_projects/images/lawrence_ma.jpg" height="250" class="picture" align="left"/>
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="images/lawrence.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Lawrence Ma</title>
+  <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="logo">Lawrence Ma</div>
       </div>
-    <div class="intro">
-      <div class="content">
-        <h2 id="heading">Why I'm Here</h2>
-          <p id="posts">
-            Sometimes you really never know where life will take you.  For me, I thought I knew exactly what I wanted to do: Go to law school, pass the bar, be a public interest attorney and save the world.  After 3 years of practicing I realized that being an attorney was not what I had envisioned at all and I was ready to make a huge change.
-            <br><br>What I realized about myself is that I want to create things, have concrete results based work and be innovative and different.  None of these things were happening in my law career, but all of them can be achieved in web development.
-          </p>
-        <h2 id="heading">About Me</h2>
+      <nav class="navbar-collapse bs-navbar-collapse collapse" role="navigation" style="height: 1px;">
+        <ul class="nav navbar-nav nav">
+          <li>
+            <a href="#top">^Top</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+            <!-- <a href="mailto:lawrencetma@gmail.com?Subject=Hello%20Lawrence" target="_top">E-mail</a> -->
+          </li>
+          <li>
+            <a href="contacts.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</head>
+<body id="top">
+  <div class="intro">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="slides" src="images/slide2.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-8 intro-img wow fadeInDown">
+                  <img src="images/mpulse.jpg">
+                </div>
+                <div class="col-md-4">
+                  <h1 class="intro-heading">Web Design and Development</h1>
+                  <p class="intro-text">
+                    Lawrence Ma is a web developer currently working in the San Francisco Bay Area as a Front End Developer for Globant and provides full stack and front end web development and website design.
+                  </p>
+                  <p><a class="btn btn-lg btn-default" href="#about" role="button">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="slides" src="images/slide1.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-4">
+                  <h1 class="intro-heading black">Making Code Beautiful</h1>
+                  <p class="intro-text black">
+                    First impressions mean everything on the internet.Your web presence must be able to convey exactly what you're all about in a clear and attractive picture.  My job, is to give the clearest and most elegant picture to your audience as possible.
+                  </p>
+                  <p><a class="btn btn-lg btn-default" href="design.html" role="button">Learn More</a></p>
+                </div>
+                <div class="col-md-8 intro-img wow fadeInDown">
+                  <img src="images/teamgathering.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="slides" src="images/slide3.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="row">
+                <div class="col-md-8 intro-img wow fadeInDown">
+                  <img src="images/APTED.png" />
+                </div>
+                <div class="col-md-4">
+                  <h1>Designing Responsively.</h1>
+                  <p class="intro-text">
+                    In today's ever changing world of new devices, phones and tablets, you need website design that can fit any screen size.  That's where responsive design comes in.  Using responsive design, I can make sure that your website will look good on any format.
+                  </p>
+                  <p><a class="btn btn-lg btn-default" href="responsive.html" role="button">Learn More</a></p>
+                  <br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+  </div>
+  <!-- Section 2 -->
+  <div class="container-fluid" id="portfolio">
+    <div class="container section">
+      <h1 class="center">Portfolio</h1>
+      <div class="row sub-section">
+        <h3 class="center">MPULSITY</h3>
+        <div class="col-md-5 col-md-offset-1 intro-img wow fadeInLeft">
+          <img src="images/mpulse.jpg">
+        </div>
+        <div class="col-md-5 intro-text wow fadeInRight">
           <p>
-            I was born and raised in the San Francisco Bay Area and I absolutely love it here.  I'm a huge San Francisco Giants fan and live and die on every game/pitch/inning.<br><br>I went to college at the University of Arizona before I attended law school at the University of the Pacific McGeorge School of Law.  I'm currently working at an apprenticeship at Deploy and recently graduated from DevBootcamp, an intensive 19 week program focused on full stack programming.  I currently live in San Bruno, California not too far from my family and beloved Giants.
+            mPULSITY is a project done with me and 2 other team members where we're trying to motivate your workouts with the power of music!
           </p>
-        <a href="https://www.facebook.com/LawrenceTMa" target="_blank" class="social_links"><img src="unit1_projects/images/facebook.png"/></a>
-          <a href="https://plus.google.com/u/0/106376259284403448263/posts" target="_blank" class="social_links"><img src="unit1_projects/images/google.png"/></a>
-          <a href="https://www.linkedin.com/pub/lawrence-ma/13/439/302" target="_blank" class="social_links"><img src="unit1_projects/images/linkedin.png"/></a>
-          <a href="https://github.com/lawrencetma" target="_blank" class="social_links"><img src="unit1_projects/images/github.png"/></a>
-        <h3>Check out my current <a href="projects.html">Projects</a> and thanks for visiting!</h3>
+          <p>
+            mPULSITY uses a ruby on rails back end with jQuery and javascript effects as well as native CSS styling and bootstrap components for the front end.
+          </p>
+          <p><a class="btn btn-lg btn-default" href="#" role="button">Visit the Site</a></p>
+        </div>
+      </div>
+      <div class="row sub-section">
+        <h3 class="center">APTED</h3>
+        <div class="col-md-5 col-md-offset-1 intro-img wow fadeInLeft">
+          <img src="images/APTED.png">
+        </div>
+        <div class="col-md-5  intro-text wow fadeInRight">
+          <p>
+            APTED is a non profit based in the San Francisco Bay Area that helps connect people recovering from eating disorders with medical professionals and treatment programs. This web application allows medical providers and programs to create profiles and advertise to people in recovery. It also is a content management system that allows administrators to create donation, membership and advertising packages as well as change the content on the site.
+          </p>
+          <p><a class="btn btn-lg btn-default" href="#" role="button">Visit the Site</a></p>
+        </div>
+      </div>
+      <div class="row sub-section">
+        <h3 class="center">Q-ING</h3>
+        <div class="col-md-3 col-md-offset-2 intro-img wow fadeInLeft">
+          <img src="images/Q-ing_screenshot.png">
+        </div>
+        <div class="col-md-5 intro-text wow fadeInRight">
+          <p>
+            Q-ing is a crowd-sourced, timing app that provides users the information needed to avoid long lines at eateries, bathrooms, and other attractions.
+          </p>
+          <p>
+            Users can check average wait times, submit their own time and add new locations. Q-ing uses the Google Maps API to determine and track locations and the Yelp API to provide relevant alternatives of nearby businesses. Q-ing, avoid the traffic of life.
+          </p>
+          <p><a class="btn btn-lg btn-default" href="#" role="button">Visit the Site</a></p>
+        </div>
+      </div>
+      <div class="row sub-section">
+        <h3 class="center">TeamGathering</h3>
+        <div class="col-md-5 col-md-offset-1 intro-img wow fadeInLeft">
+          <img src="images/teamgathering.png">
+        </div>
+        <div class="col-md-5 intro-text wow fadeInRight">
+          <p>
+            TeamGathering is a place where professionals can connect with one another to create and recruit people for projects. It allows for people that do not have an avenue to make further steps to fulfilling an idea or completing a project to do so with other people who are also interested in creating and innovating.
+          </p>
+          <p><a class="btn btn-lg btn-default" href="#" role="button">Visit the Site</a></p>
+        </div>
+      </div>
+      <div class="row sub-section">
+        <h3 class="center">Mark Noce Official Site</h3>
+        <div class="col-md-5 col-md-offset-1 intro-img wow fadeInLeft">
+          <img src="images/marknoce.png">
+        </div>
+        <div class="col-md-5 intro-text wow fadeInRight">
+          <p>
+            Mark Noce is a historical fiction writer who has two books that are about to be published that are based in medieval Wales.
+          </p>
+          <p>
+            On his site, Mark wanted readers to be able to read his blog, contact him and check out his other literary works including other books and short stories.
+          </p>
+          <p><a class="btn btn-lg btn-default" href="#" role="button">Visit the Site</a></p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="container-fluid" id="about">
+    <div class="container">
+      <h1 class="center">About Me</h1>
+      <div class="row sub-section">
+        <div class="col-md-3 col-md-offset-1 intro-img wow fadeInDown">
+          <img src="images/lawrence_ma.jpg">
+        </div>
+        <div class="col-md-6 intro-text wow fadeInDown">
+          <p>
+            I am currently working as a front end developer for the wholesale business team at Wells Fargo creating wholesale business applications.
+          </p>
+          <p>
+            In my free time I still love to code websites and applications both for myself and for clients.  Coding is very much a way of life and for me it is as relaxing as just sitting down and watching my favorite TV show.
+          </p>
+          <p>
+            In the past I've worked both solo and as part of teams creating beautiful web applications that were mostly responsive in design.
+          </p>
+          <h3 class="ul-title">Skills</h3>
+          <ul id="double">
+            <li>HTML/CSS</li>
+            <li>Ruby on Rails</li>
+            <li>Javascript</li>
+            <li>Sinatra</li>
+            <li>JQuery</li>
+            <li>AJAX</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>Google Closure</li>
+            <li>YUI</li>
+            <li>Bootstrap</li>
+            <li>Git/Github</li>
+            <li>SVN</li>
+            <li>Grunt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- <a href="https://www.facebook.com/LawrenceTMa" target="_blank" class="social_links"><img src="images/facebook.png"/></a>
+          <a href="https://plus.google.com/u/0/106376259284403448263/posts" target="_blank" class="social_links"><img src="images/google.png"/></a>
+          <a href="https://www.linkedin.com/pub/lawrence-ma/13/439/302" target="_blank" class="social_links"><img src="images/linkedin.png"/></a>
+          <a href="https://github.com/lawrencetma" target="_blank" class="social_links"><img src="images/github.png"/></a>
+        <h3>Check out my current <a href="projects.html">Projects</a> and thanks for visiting!</h3> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script>
+    var scrollClick;
+    scrollClick = function() {
+      $('a[href^="#"]').on('click', function(event) {
+          var target = $( $(this).attr('href') );
+          if( target.length ) {
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: target.offset().top
+              }, 1000);
+          }
+      });
+    };
+    $(document).ready(scrollClick);
+    $(document).on('page:load', scrollClick);
+  </script>
+  <script src="javascript/wow.min.js"></script>
+  <script>
+   new WOW().init();
+  </script>
 </body>
 </html>

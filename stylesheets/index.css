@@ -1,0 +1,102 @@
+body {
+	background: url(http://www.enecompower.com/wp-content/uploads/2013/12/architectural.jpg) no-repeat fixed;
+	background-size: fit;
+	background-position: bottom left;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.logo {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.med {
+	font-size: 1.5em;
+}
+
+.intro {
+	width: 100%;
+	height: auto;
+}
+
+.intro-heading {
+	font-family: 'Lato', sans-serif;
+}
+
+.intro-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+}
+
+.intro-img img {
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: #303030 5px 5px 5px;
+}
+
+.slides {
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.black {
+	color: black;
+}
+
+.center {
+	text-align: center;
+}
+
+.hello {
+	height: 1000px;
+}
+
+.section {
+	margin-top: 150px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.sub-section {
+	margin-bottom: 150px;
+}
+
+.section-text {
+	background-color: rgba(250,250,250,0.8);
+	box-shadow: 2px 2px 2px black;
+	border-radius: 2px;
+	padding: 20px;
+}
+
+.contacts img:hover {
+	opacity: 0.8;
+}
+
+.static-text {
+	background-color: rgba(250,250,250,0.5);
+}
+
+.static-photo {
+	max-width: 95%;
+}
+
+ul{
+  max-width: 500px;
+  margin-bottom:20px;
+  overflow:hidden;
+}
+
+.ul-title {
+	margin-left:150px;
+}
+
+li{
+  line-height:1.5em;
+  float:left;
+}
+#double li  { width:50%;} <span class="code-comment">/* 2 col */</span>
